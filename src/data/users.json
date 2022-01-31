@@ -33,22 +33,6 @@
  },
  {
   "id": 5,
-  "name": "Elkpo 123",
-  "email": "capo@hotmail.com",
-  "date": "12-03-2010",
-  "pass": "$2a$10$Mrzt6sDnKa.pKgKYxRHpHe9aKHV4FX8KgfapTLhbiGvo3siB1c2o2",
-  "avatar": "default-user.png"
- },
- {
-  "id": 6,
-  "name": "Mister X",
-  "email": "Señor@outlook.com",
-  "date": "22-12-2000",
-  "pass": "$2a$10$Mrzt6sDnKa.pKgKYxRHpHe9aKHV4FX8KgfapTLhbiGvo3siB1c2o2",
-  "avatar": "default-user.png"
- },
- {
-  "id": 7,
   "name": "chimuelo",
   "email": "chimuelo@gmail.com",
   "date": "2021-12-26",

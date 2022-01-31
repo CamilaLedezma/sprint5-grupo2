@@ -36,5 +36,6 @@ De esta página nos gustó la gama de colores y tipografía.
 - email: camilaledezma@gmail.com contraseña: adminDH
 - email: marielacalcina@gmail.com contraseña: adminDH
 - email: chimuelo@gmail.com contraseña: chimuelo12
+- email: chiruza@gmail.com contraseña: chiruza12
 
 

@@ -1,0 +1,84 @@
+</html>
+<%- include ("../partials/head") %> 
+    <body>
+        <%- include("../partials/header.ejs") %>
+
+    <main class="product-detail">
+    <section class="container">
+            <div class="columna-images">
+                <img src="/images/product-image/<%= productDetail.image %>" id= "ProductImg" alt="<%= productDetail.name %>">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="/images/product-image/<%= productDetail.image%>" id= "Product" alt="<%= productDetail.name %>"  class="small-img">
+                    </div>
+                    <div class="small-img">
+                        <img src="/images/product-image/<%= productDetail.image%>" alt="<%= productDetail.name %>" class="small-img">
+                    </div>
+                    <div class="small-img">
+                        <img src="/images/product-image/<%= productDetail.image %>" alt="<%= productDetail.name %>"  class="small-img">
+                    </div>
+                    <div class="small-img">
+                        <img src="/images/product-image/<%= productDetail.image %>" alt="<%= productDetail.name %>"  class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="columna-desc">
+                <h2 class=product-name><%= productDetail.name %></h2>
+                <h2 class=product-price style="text-decoration:line-through"> $<%= productDetail.price %></h2><h3 class=product-discount>-<%= productDetail.discount %>%</h3>
+                <%let descuento= productDetail.price-((productDetail.price/100)*productDetail.discount) %>
+                            <%let conDecimal = descuento.toFixed(2); %>
+                            <h3>$<%= conDecimal %> </h3>
+
+                <form action="/products/carrito-de-compras" method="post">
+                    <div class="elec-talle-color">
+                        <div class="elec-talle">
+                        <label for="prod-size">Talle:</label>
+                            <select name="prod-size" id="prod-size">
+                                <option value="xs" selected>  XS </option>
+                                <option value="s">  S </option>
+                                <option value="m">  M </option>
+                                <option value="l">  L </option>
+                                <option value="xl"> XL </option>
+                            </select>
+                        </div>
+                        <div class="elec-color">
+                        <label for="prod-color">Color:</label>
+                            <select name="prod-color" id="prod-color">
+                                <option value="#ffffff"selected> Marron</option>
+                                <option value="#696e6c">Negro</option>
+                                <option value="#18c97a">Amarillo</option>
+                                <option value="#000000">Gris</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cant-elec">
+                        <label for="cantidad">Cantidad:</label>
+                        <div class="button-cant-elec">
+                            <div class="cant-elec"><button class ="menos" type="submit" value><i class="fas fa-minus"></i></button><p class="cantidad">1</p><button class ="mas" type="submit" value><i class="fas fa-plus"></i></button></div>
+                        </div>
+                    </div>
+                    <% if (!locals.isLogged) { %>
+                        <br>
+                        <br>
+                        <p style="color:orangered">Podés loguearte para agregar productos al carrito</p>
+                        <a href="/login" class="button"> Agregar al carrito </a>
+                    <%  } %>
+
+                    <% if (locals.isLogged) { %>
+                        <a href="/products/carrito-de-compras" class="button"> Agregar al carrito </a>
+                    <%  } %>
+                </form>
+                <h3 class="desc-prod">Detalles del productos</h3>
+                <p><%= productDetail.description %></p>
+                </div>
+            </div>
+            
+
+    </section>
+
+
+    </main>
+
+    <%- include("../partials/footer") %> 
+</body>
+</html>

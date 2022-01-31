@@ -1,0 +1,58 @@
+[
+ {
+  "id": 1,
+  "name": "Alexander Lamas",
+  "email": "alexandernarcisolamas@gmail.com",
+  "date": "13-05-2002",
+  "pass": "$2a$10$tMuvKBnnNQZwbGoknkY7L.hVPxdDaA5wLYkNBg0rhInIiCO34k.46",
+  "avatar": "default-user.png"
+ },
+ {
+  "id": 2,
+  "name": "Gabriel Gomez",
+  "email": "gabrielgomez@gmail.com",
+  "date": "13-05-2002",
+  "pass": "$2a$10$tMuvKBnnNQZwbGoknkY7L.hVPxdDaA5wLYkNBg0rhInIiCO34k.46",
+  "avatar": "default-user.png"
+ },
+ {
+  "id": 3,
+  "name": "Camila Ledezma",
+  "email": "camilaledezma@gmail.com",
+  "date": "13-05-2002",
+  "pass": "$2a$10$tMuvKBnnNQZwbGoknkY7L.hVPxdDaA5wLYkNBg0rhInIiCO34k.46",
+  "avatar": "default-user.png"
+ },
+ {
+  "id": 4,
+  "name": "Mariela Calcina",
+  "email": "marielacalcina@gmail.com",
+  "date": "24-11-2001",
+  "pass": "$2a$10$tMuvKBnnNQZwbGoknkY7L.hVPxdDaA5wLYkNBg0rhInIiCO34k.46",
+  "avatar": "default-user.png"
+ },
+ {
+  "id": 5,
+  "name": "Elkpo 123",
+  "email": "capo@hotmail.com",
+  "date": "12-03-2010",
+  "pass": "$2a$10$Mrzt6sDnKa.pKgKYxRHpHe9aKHV4FX8KgfapTLhbiGvo3siB1c2o2",
+  "avatar": "default-user.png"
+ },
+ {
+  "id": 6,
+  "name": "Mister X",
+  "email": "Señor@outlook.com",
+  "date": "22-12-2000",
+  "pass": "$2a$10$Mrzt6sDnKa.pKgKYxRHpHe9aKHV4FX8KgfapTLhbiGvo3siB1c2o2",
+  "avatar": "default-user.png"
+ },
+ {
+  "id": 7,
+  "name": "chimuelo",
+  "email": "chimuelo@gmail.com",
+  "date": "2021-12-26",
+  "pass": "$2a$10$th1t8N2OmAInqix.cW3Hz.nXdNg01KW8FZnEpxT4PuYzFX7q0PaMu",
+  "avatar": "avatar-1643661241104.jpg"
+ }
+]

@@ -1,0 +1,61 @@
+<header>
+    <div class="top-header">
+        <nav id="menu">
+            <div class="burger-menu">
+                <ul>
+                    <li>
+                        <i class="fa fa-bars burger"></i>
+                    <ul>
+                        <li>
+                            <div class="form-serch-desplegable">
+                                <form action="/" method="get">
+                                    <input type="text" value="" placeholder="Buscar"><button type="submit"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                        </li>
+                        <% if (locals.isLogged) { %>
+                        <li><a href="/productsAdmin">Admin Productos</a></li>
+                        <li><a href="/profile">Perfil</a></li>
+                        <% } %>
+                        <li><a href="/products">Productos</a></li>
+                        <li><a href="#">Tabla de talles</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Cambios y devoluciones</a></li>
+                        
+                        <div class="user-cont">
+                            <% if (!locals.isLogged) { %>
+                                <li class="icon-li"><a href="/login"><i class="fas fa-user-circle"></a></i></li>
+                            <% } %>
+                        </div>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="logo"> 
+            <a href="/"><img src="/images/pagina/x-3d.png" alt="Logo de x-person"><p>Person</p></a>
+        </div>
+
+        <div class="form-serch-header">
+            <form action="/" method="get">
+                <input type="text" value="" placeholder="Buscar"><button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <% if (!locals.isLogged) { %>
+            <div class="user">
+                <a href="/login"><i class="far fa-user"></i></a>
+            </div>
+        <% } %>
+        <%if(locals.isLogged) { %>
+            <div class="car">
+                <a href="/products/carrito-de-compras"><i class="fas fa-shopping-cart"></i></a>
+            </div> 
+
+            <div class="logout">
+                <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        <% } %>
+    </div>
+</header>

@@ -1,0 +1,73 @@
+<html>
+<%- include ("../partials/head") %> 
+<body>
+
+<%- include("../partials/header") %> 
+<main class="product-create">
+    <section class="titulos"><h2>Crear producto</h2></section>
+    
+    <section class="forms">
+        <form action="/products/create" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="name" value="name">Nombre:<input type="text" name="name" required></label>
+        </div>
+        <div class="product-desc"> 
+            <label for="description">Descripción:</label>
+            <textarea minlength="4" name="description" required></textarea>
+        </div>  
+        <div>
+            <label for="category">Categoría:</label>
+            <select name="category" id="prod-category">
+                <option value="remeras"selected> Remeras</option>
+                <option value="abrigos">Abrigos</option>
+                <option value="pantalones">Pantalones</option>
+                <option value="accesorios">Accesorios</option>
+            </select>
+        </div>
+        <div>
+            <label for="size">Talle: </label>
+            <select name="size" id="prod-size">
+                <option value="xs" selected>  XS </option>
+                <option value="u">  U </option>
+                <option value="s">  S </option>
+                <option value="m">  M </option>
+                <option value="l">  L </option>
+                <option value="xl"> XL </option>
+            </select>
+        </div>
+        <div>
+            <label for="condition">Condición: </label>
+            <select name="condition" id="prod-size">
+                <option value="oferta" selected>  oferta </option>
+                <option value="novedad">  novedad </option>
+                <option value="destacado">  destacado </option>
+            </select>
+        </div>
+        <div>
+            <label for="quantity">Cantidad: </label>
+            <input type="number" name="cantidad" required>
+        </div>
+        <div>
+            <label for="colour">Color: </label>
+            <input type="text" name="colour" required>
+        </div>
+        <div>
+            <label for="price">Precio: </label>
+            <input type="number" name="price" required>
+        </div>
+        <div>
+            <label for="discount">Descuento: </label>
+            <input type="number" name="discount" required>
+        </div>
+        <div>
+            <label for="image">Imagen:</label>
+            <input type="file" name="image" accept=".jpg ,.jpeg,.png" required>
+        </div>
+        <div class="submit">
+            <button type="submit">Crear producto</button>
+        </form>
+    </section>
+</main>
+<%- include("../partials/footer") %> 
+</body>
+</html>

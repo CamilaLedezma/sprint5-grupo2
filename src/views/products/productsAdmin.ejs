@@ -1,0 +1,40 @@
+<html>
+<%- include ("../partials/head") %> 
+<body>
+    <%- include("../partials/header")%>
+    <main class="products">
+        <div class="p-create">
+            <a href="/products/create"><button>nuevo producto</button></a>
+        </div>
+    <h3>PRODUCTOS</h3>
+        
+        <section class="sec-carrousel">
+            <i class="fas fa-arrow-left"></i>
+            <% products.forEach(function (products) {%>
+                <article class="product">
+                    <img src="/images/product-image/<%= products.image %>" alt="<%= products.name %>">
+                    <div class="product-description">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="p-name"><%= products.name %></p>
+                            <p class="p-price" style="text-decoration:line-through"> $ <%= products.price %></p><p class="p-descuentos">-<%= products.discount %>% </p>
+                            <%let descuento= products.price-((products.price/100)*products.discount) %>
+                            <%let conDecimal = descuento.toFixed(2); %>
+                            <h3>$<%= conDecimal %> </h3>
+                            <a href="products/<%= products.id %> "><button class="ver-btn">VER</button></a>
+                    </div>
+                    <section class="botones">
+                        <div class="p-modify">
+                            <a href="/products/<%= products.id %>/edit"><button>EDITAR</button></a>
+                        </div>
+                        <form action="/products/<%= products.id %>" method="POST" >
+                            <button type="submit" class="action-button delete">ELIMINAR</button>
+                        </form>
+                    </section>
+                </article>
+                
+            <% }) %>
+                
+                <i class="fas fa-arrow-right"></i>
+        </section>
+    </main>
+    <%- include("../partials/footer") %> 

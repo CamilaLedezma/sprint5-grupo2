@@ -1,0 +1,1246 @@
+/* ========================= GENERAL ========================= */
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+body{
+    margin: 0px auto;
+    font-family: Open Sans;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+section.sec-carrousel i.fas.fa-arrow-left, 
+section.sec-carrousel i.fas.fa-arrow-right{
+    display: none;
+}
+section.sec-carrousel{
+    padding: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0px auto;
+}
+section.sec-carrousel article.product{
+    border: 1px solid black;
+    width: 100%;
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.sec-carrousel article.product img{
+    max-width: 100%;
+    height: auto;
+}
+section.sec-carrousel article.product .product-description{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+section.sec-carrousel  article.product i{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.82);
+    font-size:16px;
+    position: absolute;
+    top: -80px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+section.sec-carrousel article.product p.cuotas{
+    font-size: 12px;
+}
+section.sec-carrousel article.product .product-description button{
+    background: black;
+    color: white;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+section.ver-mas{
+    display: none;
+}
+section.ver-mas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+    font-family: open sans;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+section.ver-mas button{
+    border: none;
+    border-radius: 15px;
+    color:black;
+    width: 15%;
+    height: 30px;
+    font-size: 24px;
+    background-color: #ff523b;
+}
+/* ========================= HEADER ========================= */
+header{
+    background-color: black;
+    margin: 0px auto;
+}
+header .top-header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+header .top-header .logo {
+    display: flex;
+    padding:5px;
+    text-align: center;
+    width: 60%;
+    justify-content: center;
+}
+header .top-header .logo p,
+header .top-header .form-serch-header,
+header .top-header .user{
+    display: none;
+}
+header .top-header .logo img{
+    width: 20%;
+    height: auto;
+    align-content: center;
+}
+header .top-header .car{
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+}
+header .top-header .car i{
+    color:white
+}
+header #menu{
+    width: 20%;
+}
+header #menu .burger-menu{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+}
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+}
+#menu ul li {
+    position:relative;
+    list-style: none;
+    width: 100%;
+}
+#menu ul li .form-serch-desplegable form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 20px;
+}
+#menu ul li .form-serch-desplegable input{
+    width: 80%;
+    border:none;
+    border-radius: 5px;
+    padding: 0px 5px
+}
+#menu ul li .form-serch-desplegable button{
+    width: 20%;
+    border:none;
+    border-radius: 5px;
+}
+#menu ul li .icon-li{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0px;
+    background-color:rgba(0, 0, 0, 0.9);
+    padding:0;
+}
+#menu ul li:hover > ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 150px;
+}
+
+
+/* ========================= MAIN INDEX ========================= */
+
+main.index section.sec-banner{
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;
+    padding:20px 10px;
+    
+}
+main.index section.sec-banner i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    padding: 10px;
+    color: black;
+}
+main.index section.sec-banner img{
+    width: 90%;
+    height: auto;
+}
+main.index .sec-categorys{
+    padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main.index .sec-categorys article{
+    margin: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background-size: cover;
+    text-align: center;
+    border: solid 1px black;
+}
+main.index .sec-categorys  h4{
+    letter-spacing: 3px;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    text-transform: uppercase;
+}
+main.index .sec-categorys .remeras{
+    background-image:url('/images/pagina/cate-1.JPG');
+}
+main.index .sec-categorys .pantalones{
+    background-image:url('/images/pagina/cate-3.jpg');
+}
+main.index .sec-categorys .abrigos{
+    background-image:url('/images/pagina/cate-2.jpg');
+}
+main.index .sec-categorys .accesorios{
+    background-image:url('/images/pagina/cate-4.jpg');
+}
+main.index h3{
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+/* ========================= MAIN profile ========================= */
+main.profile{
+    width: 80%;
+    margin: 0 auto;
+}
+main.profile section h2{
+    font-family: Bebas neue;
+    font-size:200%;
+}
+main.profile section{
+    background-color: #ff523b;
+    background-image: linear-gradient(to right ,#ff523b,rgba(0, 0, 0, 0.9));
+    border-radius: 20px 5px;
+    padding: 20px;
+    margin:10px;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color : white;
+}
+main.profile section img{
+    width:80%;
+}
+/* ========================= MAIN PRODUCT CART ========================= */
+
+main.product-cart{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+main.product-cart h2{
+    font-family: Bebas neue;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-align: center;
+    -webkit-text-stroke: 0.2px black;
+    color: white; 
+}
+main.product-cart h4{
+    font-family: Bebas neue;
+    font-size: 22px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    letter-spacing: 3px;
+}
+main.product-cart p{
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+main.product-cart section.prod-tabla{
+    
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+
+}
+main.product-cart .prod-tabla article{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    border: 1px solid black;
+}
+main.product-cart .prod-tabla article .talle{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+main.product-cart .prod-tabla article .pro-imag{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+main.product-cart .prod-tabla article .pro-imag img{
+    width: 100%;
+    height: auto;
+}
+main.product-cart .prod-tabla article .pro-desc{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main.product-cart .prod-tabla article .price{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+main.product-cart .prod-tabla article .icon{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+main.product-cart .prod-tabla article .pro-desc .cant-elec{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 10px;
+    background-color:#ff523b;
+    max-height:25px;
+    border: #ff523b solid 1px;
+    align-items: center;
+    align-content: center;
+
+}
+main.product-cart section.prod-tabla article .pro-desc .cant-elec button.menos, 
+main.product-cart section.prod-tabla article .pro-desc .cant-elec button.mas{
+    display: flex;
+    align-items: center;
+    background-color: #ff523b;
+    border:none;
+    font-size: 10px;
+}
+main.product-cart .prod-tabla article .icon .eliminar{
+    border: none;
+}
+main.product-cart article.medios-envio, section.resumen-compra{
+    margin:20px 0px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    border: 1.5px solid #ff523b;
+}
+main.product-cart section.resumen-compra{
+    background-color:rgba(0, 0, 0, 0.8);
+    color: white;
+}
+main.product-cart article.medios-envio .calc-envio{
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    font-weight: bolder;
+}
+main.product-cart article.medios-envio .cod-postal, .calc-envio{
+    border:1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    height: 26px;
+    padding: 0px 5px;
+}
+main.product-cart section.resumen-compra{
+    border-radius: 15px 50px;
+}
+main.product-cart section.resumen-compra article{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-top: 1px solid #ff523b;
+    justify-content: space-between;
+}
+main.product-cart section.resumen-compra article.cuotas{
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+main.product-cart section.resumen-compra .iniciar-compra{
+    border:none;
+    border-radius: 8px;
+    height: 30px;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    width: 50%;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px rgb(255 255 255);
+    font-weight: bolder;
+}
+main.product-cart section.resumen-compra a{
+    color: white;
+    font-weight: bolder;
+}
+main.product-cart article.medios-envio div p{
+    color: black;
+    font-weight: bolder;
+}
+main.product-cart section.sec-carrousel,
+main.product-cart h3,
+main.product-cart section.ver-mas{
+    display: none;
+}
+/* ========================= MAIN PRODUCT DETAIL ========================= */
+main.product-detail{
+    margin: 0 auto;
+    width: 90%;
+}
+main.product-detail section.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+main.product-detail section.container .columna-images img{
+    width: 100%;
+}
+main.product-detail section.container .columna-desc{
+    margin-top:30px;
+}
+main.product-detail section.container div h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family: Bebas neue;
+}
+main.product-detail section.container .small-img-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+main.product-detail section.container .columna-desc{
+    width: 75%;
+    margin: 0px auto;
+}
+main.product-detail section.container .columna-desc form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+main.product-detail section.container .columna-desc form .elec-talle-color{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+main.product-detail section.container .columna-desc form .elec-talle-color .elec-talle,
+main.product-detail section.container .columna-desc form .elec-talle-color .elec-color{
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+main.product-detail section.container .columna-desc form .cant-elec{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 35px;
+    align-items: center;
+}
+main.product-detail section.container .columna-desc form .cant-elec .button-cant-elec{
+    background-color: #ff523b;
+    border-radius: 15px;
+}
+
+
+main.product-detail section.container .columna-desc form .cant-elec button.mas,
+main.product-detail section.container .columna-desc form .cant-elec button.menos{
+    width: 10%;
+    border:none;
+    background-color: #ff523b;
+}
+main.product-detail section.container .columna-desc form a.button{
+    height: 30px;
+    border: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+    padding: 10px 0px;
+    margin:10px;
+    width: 40%;
+}
+main.product-detail section.container .columna-desc p{
+    max-width: 300px;
+    text-align: justify;
+    margin: 2px auto;
+}
+main.product-detail section.container .columna-desc .p-create button,
+main.product-detail section.container .columna-desc .p-modify button{
+    height: 30px;
+    border: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    color: white;
+    background-color: #ff523b;
+    padding: 10px 0px;
+    margin:10px;
+    width: 40%;
+}
+main.product-detail h3{
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+main.product-detail h3.desc-prod{
+    text-align: center;
+}
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+    padding-bottom: 5px;
+    border: none;
+}
+/* ========================= MAIN PRODUCT-CREATE / PRODUCT-EDIT ========================= */
+main.product-create,
+main.product-edit{
+width:80%;
+margin: 0 auto;
+}
+main.product-create section.forms .product-desc textarea,
+main.product-edit section.forms .product-desc textarea{
+height:100px;
+width: 100%;
+border-radius:10px;
+margin: 0px 10px;
+padding: 5px 15px;
+}
+/* ========================= MAIN REGISTER / LOGIN ========================= */
+main.register a, main.login a{
+    font-weight: bolder;
+    color: black;
+}
+main.register .titulos,
+main.login .titulos,
+main.product-create .titulos,
+main.product-edit .titulos{
+    text-align: center;
+    font-family: Bebas neue;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+main.register section.forms,
+main.login section.forms,
+main.product-create section.forms,
+main.product-edit section.forms{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+}
+main.register section.forms form,
+main.login section.forms form,
+main.product-create section.forms form,
+main.product-edit section.forms form{
+    width: 100%;
+    background-image: linear-gradient(to right ,#ff523b,rgba(0, 0, 0, 0.9));
+    border-radius: 20px 5px;
+    padding: 20px;
+    margin:10px;
+
+}
+main.register section.forms div,
+main.login section.forms div,
+main.product-create section.forms div,
+main.product-edit section.forms div{
+    width: 80%;
+    padding: 5px;
+    margin:0px auto;
+}
+main.register section.forms .google,
+main.register section.forms .facebook,
+main.login section.forms .google,
+main.login section.forms .facebook{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+main.register section.forms .google button,
+main.register section.forms .facebook button,
+main.login section.forms .google button,
+main.login section.forms .facebook button{
+        border:1px solid black;
+        background-color:#fff;
+        border-radius:10px;
+        width:100%;
+        height:20px;
+    }
+main.register section.forms input,
+main.login section.forms input,
+main.product-create section.forms input,
+main.product-edit section.forms input{
+   
+    width: 100%;
+    margin: 0px 10px;
+    padding: 0px 15px;
+    
+}
+main.register section.forms .submit,
+main.login section.forms .submit,
+main.product-create section.forms .submit,
+main.product-edit section.forms .submit{
+    display: block;
+    padding: 20px;
+    width: 80%;
+}
+main.register section.forms .submit label,
+main.login section.forms .submit label{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+main.register section.forms .submit button,
+main.login section.forms .submit button,
+main.product-create section.forms .submit button,
+main.product-edit section.forms .submit button{
+    border:1px solid white;
+    height: 30px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 15px;
+}
+main.register section.forms .carrousel,
+main.login section.forms .carrousel{
+    display: none;
+}
+main.register input,
+main.login input, 
+main.product-create input, 
+main.product-edit input{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 0 auto;
+}
+main.register .a-login, 
+main.login .a-register{
+    margin: 30px 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Bebas neue;
+}
+/* ========================= MAIN LOGIN ========================= */
+main.login section.forms form{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+/* ========================= MAIN PRODUCTS ========================= */
+
+main.products h3{
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+main.products .p-create{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:20px 10px;
+}
+main.products .p-create a{
+    width: 60%;
+    align-content: center;
+}
+main.products .botones{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+}
+main.products .botones div,
+main.products .botones form{
+    width: 45%;
+}
+main.products button{
+
+    height: 30px;
+    border: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    color: white;
+    background-color: #ff523b;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+/* ========================= FOOTER ========================= */
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    font-size: 10px;
+}
+footer .futer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+}
+
+footer .futer h5{
+    font-family: 'Bebas neue';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+footer .futer p{
+    font-size: 10px;
+    font-family: Open Sans ;
+}
+footer .futer section.products-footer{
+    padding: 10px;
+    
+}
+footer .futer section.social-medias{
+    padding: 10px;
+    
+}
+footer .futer section.social-medias .social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .futer section.contact-footer{
+    padding: 10px;
+}
+footer .futer section.contact-footer .contact-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer section.copy-right{
+    text-align: center;
+}
+
+@media( min-width:361px){
+    /* ========================= HEADER ========================= */
+    
+    header .top-header{
+        font-size: 24px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #menu ul li .form-serch-desplegable,
+    #menu ul li .user-cont{
+        display: none;
+    }
+    header .top-header .form-serch-header{
+        display: flex;
+        width: 40%;
+    }
+    header .top-header .user{
+        display: flex;
+        width: 15%;
+        justify-content: center;
+    }
+    header .top-header .form-serch-header{
+        width: 50%;
+        border:none;
+        border-radius: 5px;
+        padding: 0px 15px;
+    }
+    header .top-header .form-serch-header form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 30px;
+    }
+    header .top-header .form-serch-header input{
+        border-radius: 5px;
+        width: 90%;
+        padding: 0px 10px;
+    }
+    header .top-header .form-serch-header button{
+        width: 10%;
+        border:none;
+        border-radius: 5px;
+    }
+    header .top-header .logo {
+        display: flex;
+        padding:5px;
+        text-align: center;
+        width: 80%;
+        justify-content: center;
+    }
+    header .top-header .logo p{
+        display: block;
+        color: white;
+        font-size: 24px;
+        font-family: Bebas neue;
+        letter-spacing: 2px;
+    }
+    /* ========================= MAIN PRODUCT CART ========================= */
+    main.product-cart{
+        width: 75%;
+        margin: 0px auto;
+    }
+    main.product-cart section.sec-carrousel i.fas.fa-arrow-left, 
+    main.product-cart section.sec-carrousel i.fas.fa-arrow-right{
+        display: none;
+    }
+    main.product-cart h3{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    main.product-cart section.sec-carrousel{
+        padding: 10px 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main.product-cart section.sec-carrousel article.product{
+        border: 1px solid black;
+        width: 48%;
+        margin: 1px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main.product-cart section.sec-carrousel article.product img{
+        width: 100%;
+        height: auto;
+    }
+    main.product-cart section.sec-carrousel article.product .product-description{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid black;
+    }
+    main.product-cart section.sec-carrousel  article.product i{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.82);
+        font-size:16px;
+        position: absolute;
+        top: -80px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+
+    main.product-cart section.sec-carrousel article.product p.cuotas{
+        font-size: 12px;
+    }
+
+    main.product-cart section.ver-mas{
+        display: none;
+    }
+
+    main.product-cart section.ver-mas{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding:10px;
+        font-family: sans-serif;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    main.product-cart section.ver-mas button{
+        border: none;
+        border-radius: 15px;
+        color:black;
+        width: 15%;
+        height: 30px;
+        font-size: 24px;
+    }
+    main.product-cart .agrup-tabla-envio section.prod-tabla .icon .eliminar:hover,
+    main.product-cart .agrup-tabla-envio article.medios-envio form input.calc-envio:hover,
+    main.product-cart .agrup-tabla-envio section.resumen-compra input.iniciar-compra:hover{
+        color:#ff523b;
+        transition-duration: 450ms;
+    }
+    main.product-cart .agrup-tabla-envio article.medios-envio form input.calc-envio:active,
+    main.product-cart .agrup-tabla-envio section.resumen-compra input.iniciar-compra:active{
+        background-color: #fff;
+        border: 1px solid #ff523b;
+        color:#ff523b;
+    }
+    /* ========================= MAIN INDEX ========================= */
+    main.index, main.products{
+        width: 75%;
+        margin: 0px auto;
+    }
+    main.index .sec-categorys article,
+    main.products .sec-categorys article{
+        width: 48%;
+    }
+    main.index section.sec-carrousel article.product,
+    main.product-detail section.sec-carrousel article.product,
+    main.products section.sec-carrousel article.product{
+        width: 48%;
+    }
+    main.index .sec-categorys article:hover{
+        border: #ff523b 1px solid;;
+    }
+    main.index .sec-categorys article:hover h4{
+        background-color: #ff523b;
+    }
+    /* ========================= MAIN REGISTER ========================= */
+    main.register,
+    main.login{
+        width: 60%;
+        margin: 0px auto;
+    }
+    main.register section.forms,main.register section.a-login{
+        font-size: 16px;
+    }
+    /* ========================= MAIN PRODUCT DETAIL =========================== */
+    main.product-create,
+    main.product-edit{
+    max-width:350px;
+    height:auto;
+    margin: 0 auto;
+    }
+    /* ========================= FOOTER ========================= */
+    footer .futer p, footer .futer i,footer .futer a{
+        font-size: 14px;
+    }
+    footer .futer section.social-medias .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+}
+@media(min-width:769px){
+    .product img{
+        transition: 0.3s all;
+    }
+    
+    .product:hover img{
+        opacity: 0.7;
+    }
+    .product .ver-btn{
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    
+    .product:hover .ver-btn{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    /* ========================= HEADER========================= */
+    header .top-header{
+        font-size: 30px;
+    }
+    header .top-header .logo {
+        display: flex;
+        padding:5px;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+    header .top-header .logo a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+    header .top-header .logo p{
+        display: block;
+        color: white;
+        font-size: 30px;
+        font-family: Bebas neue;
+        letter-spacing: 5px;
+    }
+    /* ========================= MAIN INDEX ========================= */
+    main.products .sec-categorys article{
+        width: 24%;
+    }
+    main.products section.sec-carrousel article.product{
+        width: 24%;
+    }
+    main.index .sec-categorys article{
+        width: 24%;
+        height: 200px;
+    }
+    main.index section.sec-carrousel,
+    main.product-detail section.sec-carrousel{
+        padding: 10px 5px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    main.index section.sec-carrousel i.fas.fa-arrow-left, 
+    main.index section.sec-carrousel i.fas.fa-arrow-right,
+    main.product-detail section.sec-carrousel i.fas.fa-arrow-left, 
+    main.product-detail section.sec-carrousel i.fas.fa-arrow-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product .ver-btn{
+        background: black;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    
+    .product:hover .ver-btn{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    main.index section.sec-carrousel{
+        display: flex;
+        justify-content: center;
+    }
+    main.index section.sec-carrousel article.product:hover{
+        height: 30%;
+        transition-duration: 450ms;
+    }
+    main.index section.sec-carrousel article.product:hover i,
+    main.product-detail section.sec-carrousel article.product:hover i{
+        color: #ff523b;
+        border: 1px solid #ff523b;
+        transition-duration: 450ms;
+    }
+    main.index section.ver-mas,
+    main.product-detail section.ver-mas{
+        display: none;
+    }
+    /* ========================= MAIN PRODUCT DETAIL ========================== */
+    main.product-detail section.container{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        
+    }
+    
+    main.product-detail section.container .columna-images .small-img-row{
+        flex-direction: column;
+        order:-1;
+        width:20%;
+        justify-content: space-around;
+    }
+    main.product-detail section.container .columna-images img{
+        width:80%;
+    }
+    main.product-detail section.container .columna-images{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    main.product-detail section.container .columna-desc{
+        width:60%;
+        margin: 0px auto;
+    }
+    /* ========================= MAIN PRODUCT CART ========================== */
+    main.product-cart, main.product-detail{
+        width: 75%;
+        margin: 0px auto;
+    }
+    main.product-cart .agrup-tabla-envio{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main.product-cart .agrup-tabla-envio article.medios-envio{
+        order:1;
+    }
+    main.product-cart .agrup-tabla-envio section.prod-tabla,
+    main.product-cart .agrup-tabla-envio article.medios-envio,
+    main.product-cart .agrup-tabla-envio section.resumen-compra{
+        width: 48%;
+        margin:5px;
+    }
+    main.product-cart .agrup-tabla-envio section.resumen-compra{
+        max-height: 300px;
+    }
+    main.product-cart .agrup-tabla-envio section.resumen-compra input.iniciar-compra{
+        margin:30px;
+    }
+    main.product-cart .agrup-tabla-envio article.medios-envio a p:hover,
+    main.product-cart .agrup-tabla-envio section.resumen-compra a:hover{
+        color: #ff523b;
+        transition-duration: 450ms;
+    }
+    main.product-cart section.sec-carrousel {
+        padding: 10px 5px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    main.product-cart section.sec-carrousel i.fas.fa-arrow-left, 
+    main.product-cart section.sec-carrousel i.fas.fa-arrow-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main.product-cart section.sec-carrousel article.product{
+        width: 24%;
+        transition: height 4s;
+    }
+    main.product-cart section.sec-carrousel article.product:hover{
+        height: 30%;
+    }
+    main.product-cart section.sec-carrousel article.product:hover i{
+        color: #ff523b;
+        border: 1px solid #ff523b;
+    }
+    main.product-cart section.ver-mas{
+        display: none;
+    }
+    main.product-create,
+main.product-edit{
+max-width:500px;
+height:auto;
+margin: 0 auto;
+}
+    /* ========================= MAIN REGISTER ========================== */
+    main.register section.forms div{
+        width: 80%;
+    }
+    main.register section.forms form{
+        margin:5px;
+        width: 70%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    main.register section.forms .submit{
+        display:flex;
+        justify-content: center;
+    }
+    main.register section.forms .submit label{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+    }
+    main.register section.forms .carrousel,
+    main.login section.forms .carrousel{
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    section.forms .carrousel img{
+        width: 100%;
+        height: auto;
+    }
+    main.register section.forms,
+    main.register section.a-login,
+    main.login section.forms,main.login section.a-register{
+        font-size: 20px;
+    }
+
+    /* ========================= FOOTER ========================= */
+    footer .futer h5{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    
+    footer .futer p,
+    footer .futer i{
+        font-size: 18px;
+    }
+    footer .futer section.social-medias{
+        width: 30%;
+        text-align: center;
+    }
+    footer .futer section.social-medias .social-links{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-around;
+    }
+    footer .futer section.social-medias .social-links i{
+        font-size: 30px;
+    }
+}

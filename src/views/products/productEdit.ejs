@@ -1,0 +1,77 @@
+<html>
+<%- include ("../partials/head") %> 
+<body>
+<%- include("../partials/header") %> 
+<main class="product-edit">
+    <section class="titulos"><h2>Modificar producto: <%= productToEdit.name %></h2></section>
+    
+    <section class="forms">
+        
+        <form action="/products/<%= productToEdit.id %>?_method=PUT" method="POST">
+            <!--<div>
+                <label for="id-product" value="id-product">ID de producto a modificar:<input type="text"  name="id-product" required></label>
+            </div>-->
+            <div>
+                <label for="name" value="name-product">Nombre:<input type="text" value="<%= productToEdit.name %>" name="name" required></label>
+            </div>
+            <div class="product-desc"> 
+                <label for="description">Descripción:</label>
+                <textarea minlength="4" name="description" required><%= productToEdit.description%></textarea>
+            </div>  
+            <div>
+                <label for="category">Categoría:</label>
+                <select name="category" id="prod-category">
+                    <option value="remeras"selected> Remeras</option>
+                    <option value="abrigos">Abrigos</option>
+                    <option value="pantalones">Pantalones</option>
+                    <option value="accesorios">Accesorios</option>
+                </select>
+            </div>
+            <div>
+                <label for="size">Talle: </label>
+                <select name="size" id="prod-size">
+                    <option value="xs" selected>  XS </option>
+                    <option value="u">  U </option>
+                    <option value="s">  S </option>
+                    <option value="m">  M </option>
+                    <option value="l">  L </option>
+                    <option value="xl"> XL </option>
+                </select>
+            </div>
+            <div>
+                <label for="condition">Condición: </label>
+                <select name="condition" id="prod-condition">
+                    <option value="oferta" selected>  oferta </option>
+                    <option value="novedad">  novedad </option>
+                    <option value="destacado">  destacado </option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity">Cantidad: </label>
+                <input type="number" value="<%= productToEdit.quantity %>" name="quantity" id="cantidad-product" required>
+            </div>
+            <div>
+                <label for="colour">Color: </label>
+                <input type="text" value="<%= productToEdit.colour %>" name="colour" required>
+            </div>
+            <div>
+                <label for="price">Precio: </label>
+                <input type="number" value="<%= productToEdit.price %>" name="price" required>
+            </div>
+            <div>
+                <label for="discount">Descuento: </label>
+                <input type="number" value="<%= productToEdit.discount %>" name="discount" required>
+            </div>
+            <!--<div>
+                <label for="image-product">Imagen:</label>
+                <input type="file" name="image-product" accept="image/png" required>
+            </div>-->
+            <div class="submit">
+                <button type="submit" name="submit">Guardar cambios</button>
+            </div>
+        </form>
+    </section>
+</main>
+<%- include("../partials/footer") %> 
+</body>
+</html>

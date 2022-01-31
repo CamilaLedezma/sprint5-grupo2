@@ -1,0 +1,13 @@
+<%- include ("../partials/head") %> 
+<body>
+    <%- include("../partials/header.ejs") %>
+    <main class="profile">
+        <section>
+            <h3>Bienvenidx</h3>
+            <h2> <%= user.name %> !</h2>
+            <img src="/images/user-image/<%= user.avatar %>" class="avatar">
+        </section>
+    </main>
+    <%- include("../partials/footer") %> 
+</body>
+</html>

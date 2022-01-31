@@ -1,0 +1,45 @@
+    <%- include ("../partials/head") %> 
+<body>
+    <%- include("../partials/header.ejs") %>
+    <main class="login">
+        <section class="titulos">
+            <h1>Inciar sesión</h1>
+        </section>
+        <section class=forms>
+            <div class="carrousel">
+                <!-- <i class="fas fa-arrow-left"></i> -->
+                <img src="/images/pagina/banner-l-r.jpg" alt="banner">
+                <!-- <i class="fas fa-arrow-right"></i> -->
+            </div>
+            <article>
+            <div class="google">
+                <button type="submit"><i class="fab fa-google"></i> Registrate con Google</button>
+            </div>
+            <div class="facebook">
+                <button type="submit"><i class="fab fa-facebook"></i> Registrate con Facebook</button>
+            </div>
+            <form action="/login" method="post">
+                <div class="email">
+                    <label for="email">Email:<input type="email" name="email" value="<%= locals.oldData ? oldData.email : null %>" ></label>
+                    <% if (locals.errors && errors.email) { %>
+                        <div class="text-danger">
+                            <%= errors.email.msg %> 
+                        </div>
+                    <% } %>
+                </div>
+                <div class="password">
+                    <label for="pass">Contraseña:<input type="password" name="pass" > </label>
+                    
+                    <p>¿Olvidaste tu contraseña?</p>
+                </div>    
+                <div class="submit"><label for="submit"><button type="submit" id="submit">Iniciar sesión</button></label></div>
+            </article>
+            </form>
+        </section>
+        <section class="a-register">
+            ¿Todavía no tenés una cuenta? <a href="./register">Registrate</a>
+        </section>
+    </main>
+    <%- include("../partials/footer") %> 
+</body>
+</html>

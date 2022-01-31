@@ -1,0 +1,97 @@
+<html>
+    <%- include ("../partials/head") %> 
+<body>
+    <%- include("../partials/header.ejs") %>
+
+    <main class="product-cart">
+        <h2>Carrito de compras</h2>
+        <div class="agrup-tabla-envio">
+            <section class="prod-tabla">
+                    <article>
+                        <div class="talle"><p class="prod-size">talle</p></div>
+                        <div class="color"><p class="prod-color">color</p></div>
+                        <div class="pro-imag"><img src="/images/product-image/bermuda-flex-gris.jpg" alt="billetera-collar-azul"></div>
+                        <div class="pro-desc">
+                            <p class="prod-nombre">nombre producto</p>
+                            <div class="cant-elec"><button class ="menos" type="submit" value><i class="fas fa-minus"></i></button><p class="cantidad">1</p><button class ="mas" type="submit" value><i class="fas fa-plus"></i></button></div>
+                        </div>
+                        <div class="price"><p>$XXXX</p></div>
+                        <div class="icon"><button class="eliminar" type="reset" value="eliminar"><i class="fas fa-trash-alt"></i></button></div>
+                    </article>
+                    <article>
+                        <div class="talle"><p class="prod-size">talle</p></div>
+                        <div class="color"><p class="prod-color">color</p></div>
+                        <div class="pro-imag"><img src="/images/product-image/campera-district-naranja.jpg" alt="Tapabocas-trady"></div>
+                        <div class="pro-desc">
+                            <p class="prod-nombre">nombre producto</p>
+                            <div class="cant-elec"><button class ="menos" type="submit" value><i class="fas fa-minus"></i></button><p class="cantidad">1</p><button class ="mas" type="submit" value><i class="fas fa-plus"></i></button></div>
+                        </div>
+                        <div class="price"><p>$XXXX</p></div>
+                        <div class="icon"><button class="eliminar" type="reset" value="eliminar"><i class="fas fa-trash-alt"></i></button></div>
+                    </article>
+                    <article>
+                        <div class="talle"><p class="prod-size">talle</p></div>
+                        <div class="color"><p class="prod-color">color</p></div>
+                        <div class="pro-imag"><img src="/images/product-image/pantalon-flex-menta.jpg" alt="billetera-collar-azul"></div>
+                        <div class="pro-desc">
+                            <p class="prod-nombre">nombre producto</p>
+                            <div class="cant-elec"><button class ="menos" type="submit" value><i class="fas fa-minus"></i></button><p class="cantidad">1</p><button class ="mas" type="submit" value><i class="fas fa-plus"></i></button></div>
+                        </div>
+                        <div class="price"><p>$XXXX</p></div>
+                        <div class="icon"><button class="eliminar" type="reset" value="eliminar"><i class="fas fa-trash-alt"></i></button></div>
+                    </article>
+                    <article>
+                        <div class="talle"><p class="prod-size">talle</p></div>
+                        <div class="color"><p class="prod-color">color</p></div>
+                        <div class="pro-imag"><img src="/images/product-image/gorra-openmind-rosa.jpg" alt="Tapabocas-trady"></div>
+                        <div class="pro-desc">
+                            <p class="prod-nombre">nombre producto</p>
+                            <div class="cant-elec"><button class ="menos" type="submit" value><i class="fas fa-minus"></i></button><p class="cantidad">1</p><button class ="mas" type="submit" value><i class="fas fa-plus"></i></button></div>
+                        </div>
+                        <div class="price"><p>$XXXX</p></div>
+                        <div class="icon"><button class="eliminar" type="reset" value="eliminar"><i class="fas fa-trash-alt"></i></button></div>
+                    </article>
+            </section>
+
+            <article class="medios-envio">
+                <h4>Medios de envio</h4>
+                <div>
+                    <form action="/">
+                    <input class="cod-postal" type="number" maxlength="4" placeholder="Ingresá acá tu código postal"><input class="calc-envio" type="button" value="calcular" >
+                    </form>
+                    <a href="https://www.correoargentino.com.ar/formularios/cpa"><p>No sé mi código postal</p></a>
+                </div>
+            </article>
+        
+        <section class="resumen-compra">
+            <h4>Resumen de Compra</h4>
+            <div>
+                <article>
+                    <div class="subtotal"><p>Subtotal</p></div>
+                    <div class="precio-subtotal"><p>$XXXX</p></div>
+                </article>
+                <article>
+                    <div class="cupon"><p>¿Tenés un cupón de descuento?</p></div>
+                    <div id=id-cupon><p>Ingresalo acá</p></div>
+                </article>
+                <article>
+                    <div class="envio"><p>Envío</p> </div>
+                    <div class="precio-envio"><p>$XXXX</p></div>
+                </article>
+                <article class="cuotas">
+                    <div class="texto-cuotas"><p>o hasta 6 cuotas de $XXX</p></div>
+                </article>
+            </div>
+            <input class="iniciar-compra" type="button" value="Iniciar compra"><br>
+            <a href="#">Ver más productos</a>
+        </section>
+        </div>
+        
+        
+
+    </main>
+
+
+    <%- include("../partials/footer") %> 
+</body>
+</html>
